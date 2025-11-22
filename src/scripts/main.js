@@ -21,7 +21,7 @@ const promise2 = new Promise((resolve, reject) => {
   const time = reject;
   setTimeout(() => {
     time();
-  }, 300);
+  }, 3000);
 });
 
 promise2.catch(() => {
