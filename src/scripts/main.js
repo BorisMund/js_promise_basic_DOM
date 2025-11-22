@@ -16,6 +16,7 @@ promise1.then(() => {
   el.classList.add('message');
   el.innerText = 'Promise was resolved!';
 });
+promise1.catch(() => {});
 
 const promise2 = new Promise((resolve, reject) => {
   const time = reject;
@@ -31,6 +32,7 @@ promise2.catch(() => {
   newOne.classList.add('message', 'error-message');
   newOne.innerText = 'Promise was rejected!';
 });
+promise2.then(() => {});
 
 //TODO Создай 2 промиса — promise1 и promise2.
 
